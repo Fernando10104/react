@@ -1,0 +1,42 @@
+
+.contenedor-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+
+.titulo {
+    font-size: 3rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+        
+}
+.contenedor-principal p{
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+
+.botones{
+    color: #333;
+    background-color: #F5CBC9;
+    size: 1rem;
+    border: 0;
+    margin: .5rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+
+}
+.footer1{
+    padding-top: 1rem;
+}
+.footer1 p{ 
+  font-size: 1.1rem;
+}
