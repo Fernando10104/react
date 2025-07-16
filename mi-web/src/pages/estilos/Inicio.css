@@ -6,6 +6,12 @@
 
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 
 body{
@@ -18,9 +24,10 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    max-width: 1600px;
     margin: 0 auto;
 }
+
+/*zona header */
 header{
   width: 100%;
   display: flex;
@@ -35,17 +42,41 @@ header{
   margin: 0rem;
 }
 
-input{
+.mi-contenedor {
   width: 100%;
-  padding: 10px 74px 10px 8px;
-  font-size: 18px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  outline: none;
-  box-sizing: border-box;
-  margin-top: .5rem;
-  margin-left: 1rem;
+  max-width: 1280px; /* o 1024px, según el breakpoint que usabas */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;  /* 16px */
+  padding-right: 1rem; /* 16px */
 }
+
+.mi-contenedor2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem; /* 64px */
+}
+
+.buscador-header{
+  flex: 1 1 0%; /* flex-1 */
+  max-width: 36rem; /* max-w-xl (1rem = 16px, so 36rem = 576px) */
+  margin-left: 2rem; /* mx-8 (1rem = 16px, so 2rem = 32px) */
+  margin-right: 2rem; /* mx-8 */
+}
+
+
+.contenedor-botones-header{
+  display: flex; /* flex */
+  align-items: center; /* items-center */
+  gap: 1rem; /* space-x-4 */
+}
+
+
+
+
+
+/*-------------------------------------------------------------------------------*/
 
 h1{
   color: #fff;
@@ -105,12 +136,12 @@ body{
     order: 2;
 }
 .filtros-categoria select {
-    background-color: var(--header);
+    background-color: #fff;
     font-size: 15px;
     height: 28px;
     width: auto;
     color: #333;
-    border: var(--header) 2px solid;
+    border: #333 1px solid;
     
 }
 
@@ -124,12 +155,17 @@ body{
     gap: 0.5rem;
 }
 .ordenarprecio select {
-    background-color: var(--header);
+    background-color: #fff;
     font-size: 15px;
     height: 28px;
     width: auto;
     color: #333;
-    border: var(--header) 2px solid;
+    border: #333 1px solid;
+    
+}
+
+.categoria, .ordenarprecio{
+  font-size: 14px;
 }
 
 
@@ -226,4 +262,12 @@ footer h3{
 }
 .footer1 p{ 
   font-size: 1rem;
+}
+
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+
 }
