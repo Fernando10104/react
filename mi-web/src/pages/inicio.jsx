@@ -12,7 +12,7 @@ export default function Inicio() {
   const [visibleCount, setVisibleCount] = useState(15); // 👈 cantidad que se muestra
 
   useEffect(() => {
-    fetch("https://fakestoreapi.com/products")
+    fetch("https://api.puntodigitalpy.online/productos")
       .then((respuesta) => respuesta.json())
       .then((data) => {
         setListaOriginal(data);
