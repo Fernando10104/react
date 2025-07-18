@@ -11,7 +11,7 @@ export default function Productos({productosfiltrados}){
               <img className="producto-imagen" src={item.image} alt={item.title} width="100" />
               <div className="producto-info">
                 <h3>{item.title}</h3>
-                <p>Precio: ${item.price}</p>
+                <p>₲{item.price}</p>
                 
               </div>
               
