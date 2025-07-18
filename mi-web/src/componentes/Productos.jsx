@@ -8,10 +8,10 @@ export default function Productos({productosfiltrados}){
         <div className="lista-productos">
           {productosfiltrados.map((item, index) => (
             <div key={index} className="producto">
-              <img className="producto-imagen" src={item.image} alt={item.title} width="100" />
+              <img className="producto-imagen" src={item.image} alt={item.nombre} width="100" />
               <div className="producto-info">
-                <h3>{item.title}</h3>
-                <p>₲{item.price}</p>
+                <h3>{item.nombre}</h3>
+                <p>₲{item.precio}</p>
                 
               </div>
               

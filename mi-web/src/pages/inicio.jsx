@@ -15,9 +15,9 @@ export default function Inicio() {
     fetch("https://api.puntodigitalpy.online/productos")
       .then((respuesta) => respuesta.json())
       .then((data) => {
-        setListaOriginal(data);
-        setBuscados(data);
-        setFiltrados(data);
+        setListaOriginal(data.productos);
+        setBuscados(data.productos);
+        setFiltrados(data.productos);
       })
       .catch((error) => {
         console.error("Error al cargar productos:", error);
