@@ -8,13 +8,13 @@ export default function Filters({ datos, onFiltrar }) {
     let resultado = datos;
 
     if (categoria !== "Todas") {
-      resultado = resultado.filter((p) => p.category === categoria);
+      resultado = resultado.filter((p) => p.categoria === categoria);
     }
 
     if (ordenPrecio === "asc") {
-      resultado = [...resultado].sort((a, b) => a.price - b.price);
+      resultado = [...resultado].sort((a, b) => a.precio - b.precio);
     } else if (ordenPrecio === "desc") {
-      resultado = [...resultado].sort((a, b) => b.price - a.price);
+      resultado = [...resultado].sort((a, b) => b.precio - a.precio);
     }
 
     onFiltrar(resultado);
