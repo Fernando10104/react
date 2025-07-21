@@ -5,7 +5,7 @@ export default function Productos({productosfiltrados}){
       return <p>No hay productos para mostrar.</p>;
     }
     return(
-        <div className="lista-productos">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {productosfiltrados.map((item, index) => (
             <div key={index} className="producto">
               <img className="producto-imagen" src={item.image} alt={item.nombre} width="100" />
