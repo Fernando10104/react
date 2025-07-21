@@ -48,7 +48,7 @@ export default function Inicio() {
     <div className='min-h-screen bg-gray-50'>
       <Header datos={listaOriginal} onFiltrar={setBuscados} />
 
-      <main className='container mx-auto px-4 py-8'>
+      <main className='max-w-[1400px] mx-auto px-4 py-8'>
         <Filters datos={buscados} onFiltrar={setFiltrados} />
         <Productos productosfiltrados={filtrados.slice(0, visibleCount)} />
         

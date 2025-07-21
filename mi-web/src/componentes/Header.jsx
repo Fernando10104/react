@@ -6,10 +6,11 @@ import { Link } from "react-router-dom";
 export default function Header({ datos, onFiltrar }) {
   return (
     <header className="bg-white shadow-sm border-b">
-      <div className="container mx-auto px-4">
+      <div className="max-w-[1400px] mx-auto px-4">
 
       
-        <div className="flex items-center justify-between h-16">
+        <div className="flex flex-wrap items-center justify-between gap-4 h-auto">
+
           <div className="flex items-center">
             <h1 className="text-2xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">Punto Digital</h1>
             
