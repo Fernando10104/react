@@ -5,6 +5,7 @@ export default defineConfig({
   base: '/react/',
   plugins: [react()],
   server: {
+    
     port: 5500, // 👈 acá definís el puerto
   },
 });

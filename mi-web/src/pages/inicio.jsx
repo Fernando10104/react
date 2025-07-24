@@ -5,6 +5,7 @@ import Productos from '../componentes/Productos';
 import Filters from '../componentes/Filtros';
 import Footer from '../componentes/Footer'
 
+
 export default function Inicio() {
   const [listaOriginal, setListaOriginal] = useState([]);
   const [buscados, setBuscados] = useState([]);
