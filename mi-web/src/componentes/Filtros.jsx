@@ -44,8 +44,8 @@ export default function Filters({ datos, onFiltrar }) {
             onChange={(e) => setCategoria(e.target.value)}
           >
             <option value="Todas">Todas</option>
-            <option value="electronics">electronics</option>
-            <option value="women's clothing">women's clothing</option>
+            <option value="ZAPATILLA">ZAPATILLA</option>
+            <option value="CALZADO">CALZADO</option>
           </select>
         </div>
         <div className="ordenarprecio">

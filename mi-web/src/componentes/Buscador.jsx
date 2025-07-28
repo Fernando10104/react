@@ -8,7 +8,7 @@ export default function Buscador({ datos, onFiltrar }) {
     const valor = e.target.value;
     setBusqueda(valor);
     const filtrado = datos.filter((item) =>
-      item.title.toLowerCase().includes(valor.toLowerCase())
+      item.nombre.toLowerCase().includes(valor.toLowerCase())
     );
     onFiltrar(filtrado);
   };

@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 import PrivateRoute from './componentes/PrivateRoute';
 import Crear from './pages/CrearProducto';
+import Actualizar from './pages/ActualizarProductos';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Route element={<PrivateRoute />}>
         <Route path="/Gestion" element={<Home />} />
         <Route path="/Crear" element={<Crear />} />
+        <Route path="/actualizar" element={<Actualizar />} />
+        
       </Route>
     </Routes>
   );
